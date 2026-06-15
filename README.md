@@ -86,6 +86,7 @@ Or if you do not use `uv`:
 ```bash
 python -m pytest -q
 ```
+<<<<<<< HEAD
 
 ## Continuous integration
 
@@ -114,3 +115,5 @@ docker compose up --build --abort-on-container-exit
 ## License
 
 This repository is provided as-is. Add a license file if you want to share or publish this project publicly.
+=======
+>>>>>>> a0efdc1b068283bd7ae3650a9f98caaeb0723d7f
