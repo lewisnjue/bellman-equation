@@ -16,3 +16,17 @@ torch = { index = "pytorch" }
 [[tool.uv.index]]
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
+[project.scripts]
+bellman = "bellman_equation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bellman_equation*"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.0",
+]
