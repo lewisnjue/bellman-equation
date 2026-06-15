@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  bellman:
+    build: .
+    container_name: bellman-app
+    working_dir: /app
+    volumes:
+      - .:/app:cached
+    command: uv run python -m bellman_equation
+
+  tests:
+    build: .
+    working_dir: /app
+    command: uv run python -m pytest -q
+    depends_on:
+      - bellman

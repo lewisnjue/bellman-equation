@@ -91,6 +91,21 @@ python -m pytest -q
 
 This repository includes a GitHub Actions workflow at `.github/workflows/python-tests.yml` that runs tests on every push and pull request targeting `main`.
 
+## Docker support
+
+Build and run the project with Docker:
+
+```bash
+docker build -t bellman-equation .
+docker run --rm bellman-equation --algorithm v
+```
+
+Run tests using Docker Compose:
+
+```bash
+docker compose up --build --abort-on-container-exit
+```
+
 ## Notes
 
 - The package currently targets the FrozenLake environment and demonstrates Bellman backups with simple tabular estimates.
