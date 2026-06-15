@@ -86,16 +86,3 @@ Or if you do not use `uv`:
 ```bash
 python -m pytest -q
 ```
-
-## Continuous integration
-
-This repository includes a GitHub Actions workflow at `.github/workflows/python-tests.yml` that runs tests on every push and pull request targeting `main`.
-
-## Notes
-
-- The package currently targets the FrozenLake environment and demonstrates Bellman backups with simple tabular estimates.
-- TensorBoard logging is available through the runner, which writes metrics during training.
-
-## License
-
-This repository is provided as-is. Add a license file if you want to share or publish this project publicly.
