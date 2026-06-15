@@ -86,7 +86,6 @@ Or if you do not use `uv`:
 ```bash
 python -m pytest -q
 ```
-<<<<<<< HEAD
 
 ## Continuous integration
 
@@ -106,14 +105,3 @@ Run tests using Docker Compose:
 ```bash
 docker compose up --build --abort-on-container-exit
 ```
-
-## Notes
-
-- The package currently targets the FrozenLake environment and demonstrates Bellman backups with simple tabular estimates.
-- TensorBoard logging is available through the runner, which writes metrics during training.
-
-## License
-
-This repository is provided as-is. Add a license file if you want to share or publish this project publicly.
-=======
->>>>>>> a0efdc1b068283bd7ae3650a9f98caaeb0723d7f
